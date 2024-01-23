@@ -1,6 +1,6 @@
-// My Public API - 8a886d3f4363b10af9be5b8d86901ca9
+// My Public API - 1737404381c071d811086e9e2be2987d
 
-// My Hash - 06dcec256cdbecac0e7542c7e0b74fc5
+// My Hash - 14da9c0afc0e67d0ebb1ca9d66fce134fc1be0f0
 
 // Selecting the element from DOM
 
@@ -20,7 +20,7 @@ async function searchHeros(textSearched) {
      }
 
      // API call to get the data 
-     await fetch(`https://gateway.marvel.com/v1/public/characters?nameStartsWith=${textSearched}&apikey=8a886d3f4363b10af9be5b8d86901ca9&hash=06dcec256cdbecac0e7542c7e0b74fc5&ts=1672940765610`)
+     await fetch(`https://gateway.marvel.com/v1/public/characters?nameStartsWith=${textSearched}&apikey=1737404381c071d811086e9e2be2987d&hash=14da9c0afc0e67d0ebb1ca9d66fce134fc1be0f0`)
           .then(res => res.json()) //Converting the data into JSON format
           .then(data => showSearchedResults(data.data.results)) //sending the searched results characters to show in HTML
 }
