@@ -1,12 +1,11 @@
 // My Public API - 1737404381c071d811086e9e2be2987d
 
-// My Hash - de6b1868d5900241bd8422d27ecc13a0
+// My Hash - 1737404381c071d811086e9e2be2987d
 
 // Selecting the element from DOM
 
 let searchBar = document.getElementById("search-bar");
 let searchResults = document.getElementById("search-results");
-let timestamp = Date.now();
 // Adding eventListener to search bar
 searchBar.addEventListener("input", () => searchHeros(searchBar.value));
 
@@ -20,7 +19,7 @@ async function searchHeros(textSearched) {
 
   // API call to get the data
   await fetch(
-    `https://gateway.marvel.com/v1/public/characters?nameStartsWith=${textSearched}&ts=${timestamp}&apikey=1737404381c071d811086e9e2be2987d&hash=de6b1868d5900241bd8422d27ecc13a0`
+    `https://gateway.marvel.com/v1/public/characters?nameStartsWith=${textSearched}&ts=1&apikey=1737404381c071d811086e9e2be2987d&hash=1737404381c071d811086e9e2be2987d`
   )
     .then((res) => res.json()) //Converting the data into JSON format
     .then((data) => showSearchedResults(data.data.results)); //sending the searched results characters to show in HTML
